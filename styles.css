@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    background-color: violet;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    border: 2px solid grey;
+    
+}
+
+.gridsquare {
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    user-select: none;
+
+}
+
+.gridsquare:hover {
+ background-color: grey;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 750px;
+    height: 830px;
+    padding-top: 60px;
+    border-radius: 5%;
+    background-color: rgb(207, 155, 255);
+    border: 1px solid black;
+    gap: 50px
+}
+
+.controllers {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.rgbuttons {
+    display: flex;
+    gap: 5px;
+    align-self: center;
+}
+
+.joystick {
+    width: 120px;
+    height: 120px;
+    
+    
+}
+
+.colors {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    
+}
+
+#pink{
+    background-color: rgb(255, 128, 255);
+}
+
+#purple{
+    background-color: rgb(203, 116, 253);
+}
+
+#psych {
+    background: linear-gradient(217deg, rgba(6, 189, 21, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(174, 0, 255, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(255, 70, 230, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+#shades {
+    background: linear-gradient(217deg, rgba(0, 0, 0, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(85, 85, 85, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(255, 255, 255, 0.8), rgba(0,0,255,0) 70.71%);
+
+}
+
