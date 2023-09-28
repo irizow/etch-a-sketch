@@ -1,9 +1,36 @@
+@font-face {
+    font-family: Orbitron ;
+    src: url(images/Orbitron-VariableFont_wght.ttf);
+}
 body {
     display: flex;
-    background-color: violet;
+    background-image: url(images/wallpaperpink.png);
     justify-content: center;
     align-items: center;
     padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+p {
+    text-align: center;
+}
+
+.header {
+    font-size: 30px;
+    color: rgb(255, 255, 208);
+    width: 400px;
+    height: 70px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin:0;
+    padding: 0;
+}
+.headicon {
+    width: 30px;
+    height: 30px;
 }
 
 .container {
@@ -15,8 +42,11 @@ body {
     margin:0;
     padding:0;
     border: 2px solid grey;
+    cursor: url(images/pencil3.png) 20 30, pointer;
+    
     
 }
+
 
 .gridsquare {
     border: 1px solid rgba(0, 0, 0, 0.096);
@@ -33,12 +63,12 @@ body {
     align-items: center;
     flex-direction: column;
     width: 750px;
-    height: 830px;
-    padding-top: 60px;
+    height: 900px;
+    padding-top: 10px;
     border-radius: 5%;
     background-color: rgb(207, 155, 255);
     border: 1px solid black;
-    gap: 50px
+    gap: 10px
 }
 
 .controllers {
@@ -54,22 +84,79 @@ body {
 }
 
 .joystick {
-    width: 120px;
-    height: 120px;
+    cursor: pointer;
     
     
+}
+
+.settings {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+#gridicon {
+    background-color: rgb(171, 219, 171);
+    margin-left: 40px;
+}
+
+#minusicon {
+    background-color: rgb(146, 146, 228);
+    display: inline-block;
+    text-align: center;
+}
+
+.iconblock {
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+#plusicon {
+    background-color: rgb(243, 167, 167);;
+    display: inline-block;
+    margin-left: 25px;
+    text-align: center;
+
+}
+
+#rubbericon {
+    background-color: rgb(228, 228, 153);
+    margin-left: 40px;
 }
 
 .colors {
     border-radius: 100%;
     width: 50px;
     height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.356);
+    border: 2px solid rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 0px 2px 2px rgb(176, 121, 228);
+    cursor: pointer;
     
 }
 
+.colors:hover {
+    box-shadow: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+
+
 #pink{
-    background-color: rgb(255, 128, 255);
+    background-color: rgb(255, 192, 241);
 }
 
 #purple{
@@ -83,9 +170,28 @@ body {
 }
 
 #shades {
-    background: linear-gradient(217deg, rgba(0, 0, 0, 0.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(85, 85, 85, 0.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(255, 255, 255, 0.8), rgba(0,0,255,0) 70.71%);
+    background-color: rgba(0, 0, 0, 0.829);
 
+}
+
+.lowbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.buttons {
+    width: 65px;
+    height: 20px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 15%;
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow:  0px 0px 2px 2px rgb(176, 121, 228);
+    cursor: pointer;
+}
+
+.buttons:hover {
+    box-shadow: none;
 }
 

@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="frame">
+    <div class="header"><img class="headicon" src="images/half-moon.png"><p>PIXEL A SKETCH</p><img class="headicon" src="images/star.png"></div>
     <div class="container">
     </div>
 
@@ -16,19 +17,32 @@
     <div class="controllers">
 
     
-    <img class="joystick" src="images/dpad.png" alt="directional pad image">
+    <div class="joystick">
+        <div id="gridicon" class="settings"><img class="icon" src="images/grid.png"></div>
+        <div id="minusicon" class="settings"><img  class="iconblock" src="images/minus.png"></div>
+        <div id="plusicon" class="settings"><img class ="iconblock" src="images/add.png"></div>
+        <div id="rubbericon" class="settings"><img  class ="icon" src="images/rubber.png"></div>
+    </div>
         
     
     <div class="rgbuttons"></div> 
-        <div class="colors" id="pink"></div>
-        <div class="colors" id="purple"></div>
-        <div class="colors" id="psych"></div>
-        <div class="colors" id="shades"></div>
+        <div class="colors" id="pink"><img class="icon" src="images/heart3.png" alt="heart icon"></div>
+        <div class="colors" id="purple"><img class="icon" src="images/flower.png" alt="heart icon"></div>
+        <div class="colors" id="psych"><img class="icon" src="images/interriogation.png" alt="heart icon"></div>
+        <div class="colors" id="shades"><img class="icon" src="images/b.png" alt="heart icon"></div>
     </div>
+
+   <div class="lowbuttons">
+    <div class="buttons" id="clear">Clear</div>
+    <div class="buttons" id="save">Save</div>
+   </div>
 </div>
 
-</div>
+
     
     <script src="script.js"></script>
+    <script src=
+    "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+      </script>
 </body>
 </html>
