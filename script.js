@@ -67,7 +67,7 @@ function setDownloadDrawing() {
 }
 
 function downloadDrawing(canvas) {
-    const fileName = "mydrawing";
+    const fileName = prompt("Give a title to your masterpiece")
     const link = document.createElement("a");
     link.download = fileName + ".png";
     console.log(canvas);
